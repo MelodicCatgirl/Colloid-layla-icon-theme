@@ -14,7 +14,7 @@ fi
 
 SRC_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-THEME_NAME=Colloid
+THEME_NAME=Colloid-layla
 THEME_VARIANTS=('' '-Purple' '-Pink' '-Red' '-Orange' '-Yellow' '-Green' '-Teal' '-Grey')
 SCHEME_VARIANTS=('' '-Nord' '-Dracula' '-Gruvbox' '-Everforest' '-Catppuccin')
 COLOR_VARIANTS=('-Light' '-Dark' '')
@@ -64,11 +64,11 @@ install() {
 
     colors_folder
 
-    if [[ "${scheme}" != '' || "${theme}" != '' ]]; then
+    #if [[ "${scheme}" != '' || "${theme}" != '' ]]; then
       cp -r "${SRC_DIR}"/notint/*.svg                                                       "${THEME_DIR}"/places/scalable
       sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/places/scalable/*.svg
       sed -i "s/#60c0f0/${theme_color}/g"                                                   "${THEME_DIR}"/apps/scalable/*.svg
-    fi
+    #fi
 
     cp -r "${SRC_DIR}"/links/*                                                               "${THEME_DIR}"
   fi
@@ -140,31 +140,31 @@ install() {
 colors_folder() {
   case "$theme" in
     '')
-      theme_color='#5b9bf8'
+      theme_color='#b68'
       ;;
     -Purple)
-      theme_color='#BA68C8'
+      theme_color='#86b'
       ;;
     -Pink)
-      theme_color='#F06292'
+      theme_color='#b68'
       ;;
     -Red)
-      theme_color='#F44336'
+      theme_color='#b66'
       ;;
     -Orange)
-      theme_color='#FB8C00'
+      theme_color='#b86'
       ;;
     -Yellow)
-      theme_color='#FFD600'
+      theme_color='#b86'
       ;;
     -Green)
-      theme_color='#66BB6A'
+      theme_color='#8b6'
       ;;
     -Teal)
-      theme_color='#4DB6AC'
+      theme_color='#6b8'
       ;;
     -Grey)
-      theme_color='#888888'
+      theme_color='#41393d'
       ;;
   esac
 
