@@ -1,6 +1,6 @@
 ## Colloid-layla icon theme
 
-this is a fork of [Colloid icon theme](https://github.com/vinceliuice/Colloid-icon-theme) which replaces the default color scheme with my own color scheme
+this is a fork of [Colloid icon theme](https://github.com/vinceliuice/Colloid-icon-theme) which replaces the default color scheme with [my own color scheme](https://github.com/MelodicCatgirl/layla-color-scheme)
 
 ### screenshot
 
